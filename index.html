@@ -1,1 +1,263 @@
-<h1>Prueba Informe Colegio</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Informe Colegio San Francisco Javier de Huechuraba</title>
+<style>
+  body { font-family: 'Segoe UI', Arial, sans-serif; background:#f4f6f8; margin:0; padding:20px; color:#222; }
+  .header { background:#1F4E79; color:white; padding:20px; border-radius:10px; margin-bottom:20px; }
+  .header h1 { margin:0; font-size:22px; }
+  .header p { margin:5px 0 0; font-size:13px; opacity:0.85; }
+  .resumen { background:white; border-radius:10px; padding:16px 20px; margin-bottom:20px; box-shadow:0 1px 3px rgba(0,0,0,0.08); }
+  .resumen h3 { margin-top:0; }
+  .tabla-resumen { width:100%; border-collapse:collapse; font-size:13px; }
+  .tabla-resumen th { background:#2E75B6; color:white; padding:8px; text-align:left; }
+  .tabla-resumen td { padding:8px; border-bottom:1px solid #eee; }
+  .vacio { color:#888; font-style:italic; }
+  .mes { background:white; border-radius:10px; padding:16px; margin-bottom:24px; box-shadow:0 1px 3px rgba(0,0,0,0.08); overflow-x:auto; }
+  .mes h2 { color:#1F4E79; margin-top:0; }
+  table.calendario { width:100%; border-collapse:collapse; table-layout:fixed; }
+  table.calendario th { background:#2E75B6; color:white; padding:8px; font-size:13px; }
+  td.dia { vertical-align:top; border:1px solid #ddd; padding:0; height:90px; width:20%; }
+  td.vacio-dia { background:#f9f9f9; border:1px solid #ddd; }
+  td.dia.hoy { box-shadow: inset 0 0 0 2px #E74C3C; }
+  .num-dia { font-size:11px; color:#888; padding:3px 6px; }
+  .mitad { min-height:34px; padding:2px 6px; font-size:11px; }
+  .mitad.marco { background:#EBF5FB; }
+  .mitad.agatha { background:#FDF2F8; }
+  .mitad ul { margin:2px 0; padding-left:14px; }
+  .mitad li { margin-bottom:2px; }
+  .leyenda { font-size:12px; color:#555; margin-top:10px; }
+  .leyenda span { display:inline-block; width:10px; height:10px; border-radius:2px; margin-right:4px; vertical-align:middle; }
+  .sw-marco { background:#2E75B6; }
+  .sw-agatha { background:#C2185B; }
+  footer { text-align:center; font-size:11px; color:#999; margin-top:30px; }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>📋 Informe Colegio San Francisco Javier de Huechuraba</h1>
+    <p>Actualizado: 08/07/2026 12:30</p>
+  </div>
+
+  <div class="resumen">
+    <h3>📅 Actividades de mañana — 09/07/2026</h3>
+    <p class='vacio'>Sin actividades.</p>
+    <h3>📆 Próxima semana (09/07 al 15/07/2026)</h3>
+    <table class="tabla-resumen">
+        <tr><th>Alumno</th><th>Materia</th><th>Actividad</th><th>Fecha</th></tr>
+        <tr><td>👦 Marco Antonio</td><td>A
+ARTES VISUALES 2026
+6° BÁS</td><td>Traer materiales: Bitácora (carpeta de arte), plumones, lápiz grafito, goma, tijeras</td><td>13/07/2026</td></tr>
+<tr><td>👦 Marco Antonio</td><td>M
+Música 2026
+Sextos Básicos</td><td>Análisis de la rúbrica y práctica instrumental de la Frase A</td><td>14/07/2026</td></tr>
+<tr><td>👧 Ágatha Sofía</td><td>M
+Música 2026
+Quintos Básico</td><td>Clase 2: Análisis de la obra; práctica instrumental de la Frase A</td><td>15/07/2026</td></tr>
+        </table>
+  </div>
+
+  
+        <div class="mes">
+          <h2>Julio 2026</h2>
+          <table class="calendario">
+            <tr><th>Lunes</th><th>Martes</th><th>Miércoles</th><th>Jueves</th><th>Viernes</th></tr>
+            <tr><td class="dia vacio-dia"></td><td class="dia vacio-dia"></td><td class="dia">
+                    <div class="num-dia">1</div>
+                    <div class="mitad marco"></div>
+                    <div class="mitad agatha"></div>
+                </td><td class="dia">
+                    <div class="num-dia">2</div>
+                    <div class="mitad marco"></div>
+                    <div class="mitad agatha"></div>
+                </td><td class="dia">
+                    <div class="num-dia">3</div>
+                    <div class="mitad marco"></div>
+                    <div class="mitad agatha"></div>
+                </td></tr><tr><td class="dia">
+                    <div class="num-dia">6</div>
+                    <div class="mitad marco"></div>
+                    <div class="mitad agatha"></div>
+                </td><td class="dia">
+                    <div class="num-dia">7</div>
+                    <div class="mitad marco"><ul><li>Análisis de la obra y práctica instrumental de la Frase A</li></ul></div>
+                    <div class="mitad agatha"></div>
+                </td><td class="dia hoy">
+                    <div class="num-dia">8</div>
+                    <div class="mitad marco"></div>
+                    <div class="mitad agatha"><ul><li>Clase 1: Repaso de la partitura y ubicación de notas en el pentagrama</li></ul></div>
+                </td><td class="dia">
+                    <div class="num-dia">9</div>
+                    <div class="mitad marco"></div>
+                    <div class="mitad agatha"></div>
+                </td><td class="dia">
+                    <div class="num-dia">10</div>
+                    <div class="mitad marco"></div>
+                    <div class="mitad agatha"></div>
+                </td></tr><tr><td class="dia">
+                    <div class="num-dia">13</div>
+                    <div class="mitad marco"><ul><li>Traer materiales: Bitácora (carpeta de arte), plumones, lápiz grafito, goma, tijeras</li></ul></div>
+                    <div class="mitad agatha"></div>
+                </td><td class="dia">
+                    <div class="num-dia">14</div>
+                    <div class="mitad marco"><ul><li>Análisis de la rúbrica y práctica instrumental de la Frase A</li></ul></div>
+                    <div class="mitad agatha"></div>
+                </td><td class="dia">
+                    <div class="num-dia">15</div>
+                    <div class="mitad marco"></div>
+                    <div class="mitad agatha"><ul><li>Clase 2: Análisis de la obra; práctica instrumental de la Frase A</li></ul></div>
+                </td><td class="dia">
+                    <div class="num-dia">16</div>
+                    <div class="mitad marco"></div>
+                    <div class="mitad agatha"></div>
+                </td><td class="dia">
+                    <div class="num-dia">17</div>
+                    <div class="mitad marco"></div>
+                    <div class="mitad agatha"></div>
+                </td></tr><tr><td class="dia">
+                    <div class="num-dia">20</div>
+                    <div class="mitad marco"></div>
+                    <div class="mitad agatha"></div>
+                </td><td class="dia">
+                    <div class="num-dia">21</div>
+                    <div class="mitad marco"><ul><li>Práctica instrumental de la Frase B</li></ul></div>
+                    <div class="mitad agatha"></div>
+                </td><td class="dia">
+                    <div class="num-dia">22</div>
+                    <div class="mitad marco"></div>
+                    <div class="mitad agatha"><ul><li>Clase 3: Análisis de la rúbrica; práctica instrumental de la Frase B</li></ul></div>
+                </td><td class="dia">
+                    <div class="num-dia">23</div>
+                    <div class="mitad marco"></div>
+                    <div class="mitad agatha"></div>
+                </td><td class="dia">
+                    <div class="num-dia">24</div>
+                    <div class="mitad marco"></div>
+                    <div class="mitad agatha"></div>
+                </td></tr><tr><td class="dia">
+                    <div class="num-dia">27</div>
+                    <div class="mitad marco"></div>
+                    <div class="mitad agatha"></div>
+                </td><td class="dia">
+                    <div class="num-dia">28</div>
+                    <div class="mitad marco"><ul><li>Práctica instrumental del tema completo</li></ul></div>
+                    <div class="mitad agatha"></div>
+                </td><td class="dia">
+                    <div class="num-dia">29</div>
+                    <div class="mitad marco"></div>
+                    <div class="mitad agatha"><ul><li>Clase 4: Práctica instrumental del tema completo</li></ul></div>
+                </td><td class="dia">
+                    <div class="num-dia">30</div>
+                    <div class="mitad marco"></div>
+                    <div class="mitad agatha"></div>
+                </td><td class="dia">
+                    <div class="num-dia">31</div>
+                    <div class="mitad marco"></div>
+                    <div class="mitad agatha"></div>
+                </td></tr>
+          </table>
+        </div>
+        <div class="mes">
+          <h2>Agosto 2026</h2>
+          <table class="calendario">
+            <tr><th>Lunes</th><th>Martes</th><th>Miércoles</th><th>Jueves</th><th>Viernes</th></tr>
+            <tr><td class="dia">
+                    <div class="num-dia">3</div>
+                    <div class="mitad marco"></div>
+                    <div class="mitad agatha"></div>
+                </td><td class="dia">
+                    <div class="num-dia">4</div>
+                    <div class="mitad marco"><ul><li>Práctica instrumental del tema completo</li></ul></div>
+                    <div class="mitad agatha"></div>
+                </td><td class="dia">
+                    <div class="num-dia">5</div>
+                    <div class="mitad marco"></div>
+                    <div class="mitad agatha"><ul><li>Clase 5: Evaluaciones individuales (Sau Sau)</li></ul></div>
+                </td><td class="dia">
+                    <div class="num-dia">6</div>
+                    <div class="mitad marco"></div>
+                    <div class="mitad agatha"></div>
+                </td><td class="dia">
+                    <div class="num-dia">7</div>
+                    <div class="mitad marco"></div>
+                    <div class="mitad agatha"></div>
+                </td></tr><tr><td class="dia">
+                    <div class="num-dia">10</div>
+                    <div class="mitad marco"></div>
+                    <div class="mitad agatha"></div>
+                </td><td class="dia">
+                    <div class="num-dia">11</div>
+                    <div class="mitad marco"><ul><li>Evaluación de interpretación del tema completo</li></ul></div>
+                    <div class="mitad agatha"></div>
+                </td><td class="dia">
+                    <div class="num-dia">12</div>
+                    <div class="mitad marco"></div>
+                    <div class="mitad agatha"></div>
+                </td><td class="dia">
+                    <div class="num-dia">13</div>
+                    <div class="mitad marco"></div>
+                    <div class="mitad agatha"></div>
+                </td><td class="dia">
+                    <div class="num-dia">14</div>
+                    <div class="mitad marco"></div>
+                    <div class="mitad agatha"></div>
+                </td></tr><tr><td class="dia">
+                    <div class="num-dia">17</div>
+                    <div class="mitad marco"></div>
+                    <div class="mitad agatha"></div>
+                </td><td class="dia">
+                    <div class="num-dia">18</div>
+                    <div class="mitad marco"><ul><li>Ensayo de presentación Gala Folklórica</li></ul></div>
+                    <div class="mitad agatha"></div>
+                </td><td class="dia">
+                    <div class="num-dia">19</div>
+                    <div class="mitad marco"></div>
+                    <div class="mitad agatha"></div>
+                </td><td class="dia">
+                    <div class="num-dia">20</div>
+                    <div class="mitad marco"></div>
+                    <div class="mitad agatha"></div>
+                </td><td class="dia">
+                    <div class="num-dia">21</div>
+                    <div class="mitad marco"></div>
+                    <div class="mitad agatha"></div>
+                </td></tr><tr><td class="dia">
+                    <div class="num-dia">24</div>
+                    <div class="mitad marco"></div>
+                    <div class="mitad agatha"></div>
+                </td><td class="dia">
+                    <div class="num-dia">25</div>
+                    <div class="mitad marco"></div>
+                    <div class="mitad agatha"></div>
+                </td><td class="dia">
+                    <div class="num-dia">26</div>
+                    <div class="mitad marco"></div>
+                    <div class="mitad agatha"></div>
+                </td><td class="dia">
+                    <div class="num-dia">27</div>
+                    <div class="mitad marco"></div>
+                    <div class="mitad agatha"></div>
+                </td><td class="dia">
+                    <div class="num-dia">28</div>
+                    <div class="mitad marco"></div>
+                    <div class="mitad agatha"></div>
+                </td></tr><tr><td class="dia">
+                    <div class="num-dia">31</div>
+                    <div class="mitad marco"></div>
+                    <div class="mitad agatha"></div>
+                </td><td class="dia vacio-dia"></td><td class="dia vacio-dia"></td><td class="dia vacio-dia"></td><td class="dia vacio-dia"></td></tr>
+          </table>
+        </div>
+
+  <div class="leyenda">
+    <span class="sw-marco"></span> Marco Antonio (6°A) &nbsp;&nbsp;
+    <span class="sw-agatha"></span> Ágatha Sofía (5°A)
+  </div>
+
+  <footer>Generado automáticamente desde Google Classroom.</footer>
+
+</body>
+</html>
