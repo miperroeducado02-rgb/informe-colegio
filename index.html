@@ -17,6 +17,15 @@
   .vacio { color:#888; font-style:italic; }
   .mes { background:white; border-radius:10px; padding:16px; margin-bottom:24px; box-shadow:0 1px 3px rgba(0,0,0,0.08); overflow-x:auto; }
   .mes h2 { color:#1F4E79; margin-top:0; }
+  /* Botón para expandir/ocultar las semanas y días ya transcurridos del mes en curso */
+  .toggle-pasadas { display:none; }
+  .btn-pasadas { display:inline-block; cursor:pointer; font-size:13px; font-weight:600;
+                  color:#2E75B6; margin:0 0 10px; user-select:none; }
+  .btn-pasadas .txt-ocultar { display:none; }
+  .toggle-pasadas:checked ~ .btn-pasadas .txt-mostrar { display:none; }
+  .toggle-pasadas:checked ~ .btn-pasadas .txt-ocultar { display:inline; }
+  .toggle-pasadas:not(:checked) ~ table .semana-pasada { display:none; }
+  .toggle-pasadas:not(:checked) ~ .agenda-mensual .agenda-pasada { display:none; }
   table.calendario { width:100%; border-collapse:collapse; table-layout:fixed; }
   table.calendario th { background:#2E75B6; color:white; padding:8px; font-size:13px; }
   td.dia { vertical-align:top; border:1px solid #ddd; padding:0; height:90px; width:20%; }
@@ -80,21 +89,22 @@
 
   <div class="header">
     <h1>📋 Informe Colegio San Francisco Javier de Huechuraba</h1>
-    <p>Actualizado: 20/07/2026 20:07</p>
+    <p>Actualizado: 20/07/2026 22:24</p>
   </div>
 
   <div class="resumen estado-resumen">
     <div class="estado-item">
-                <div class="estado-titulo">👦 Información de Marco Antonio actualizada el 20/07/2026 a las 20:05.</div><div class="estado-fallo">⚠️ Último intento fallido: el 15/07/2026 a las 17:30.</div></div>
+                <div class="estado-titulo">👦 Información de Marco Antonio actualizada el 20/07/2026 a las 22:22.</div><div class="estado-fallo">⚠️ Último intento fallido: el 15/07/2026 a las 17:30.</div></div>
 <div class="estado-item">
-                <div class="estado-titulo">👧 Información de Ágatha Sofía actualizada el 20/07/2026 a las 20:07.</div><div class="estado-fallo">⚠️ Último intento fallido: el 17/07/2026 a las 18:44.</div></div>
+                <div class="estado-titulo">👧 Información de Ágatha Sofía actualizada el 20/07/2026 a las 22:24.</div><div class="estado-fallo">⚠️ Último intento fallido: el 17/07/2026 a las 18:44.</div></div>
   </div>
 
   <div class="resumen">
     <h3>📅 Actividades de mañana — 21/07/2026</h3>
     <table class="tabla-resumen">
         <tr><th>Alumno</th><th>Materia</th><th>Actividad</th><th>Fecha</th></tr>
-        <tr><td>👦 Marco Antonio</td><td>Música 2026
+        <tr><td>👦 Marco Antonio</td><td>M
+Música 2026
 Sextos Básicos</td><td>Práctica instrumental de la Frase B</td><td>21/07/2026</td></tr>
         </table>
     <h3>📆 Próxima semana (21/07 al 27/07/2026)</h3>
@@ -102,7 +112,8 @@ Sextos Básicos</td><td>Práctica instrumental de la Frase B</td><td>21/07/2026<
             <summary>👦 Marco Antonio (2)</summary>
             <div class="lista-correos"><div class="correo-item">
             <div class="correo-cabecera">
-                <span>ARTES VISUALES 2026
+                <span>A
+ARTES VISUALES 2026
 6° BÁSICOS</span>
                 <span class="correo-fecha">27/07/2026</span>
             </div>
@@ -110,7 +121,8 @@ Sextos Básicos</td><td>Práctica instrumental de la Frase B</td><td>21/07/2026<
         </div>
 <div class="correo-item">
             <div class="correo-cabecera">
-                <span>ARTES VISUALES 2026
+                <span>A
+ARTES VISUALES 2026
 6° BÁSICOS</span>
                 <span class="correo-fecha">27/07/2026</span>
             </div>
@@ -120,7 +132,8 @@ Sextos Básicos</td><td>Práctica instrumental de la Frase B</td><td>21/07/2026<
             <summary>👧 Ágatha Sofía (2)</summary>
             <div class="lista-correos"><div class="correo-item">
             <div class="correo-cabecera">
-                <span>Música 2026
+                <span>M
+Música 2026
 Quintos Básicos</span>
                 <span class="correo-fecha">22/07/2026</span>
             </div>
@@ -128,7 +141,8 @@ Quintos Básicos</span>
         </div>
 <div class="correo-item">
             <div class="correo-cabecera">
-                <span>5°básico Lenguaje y Comunicación 20</span>
+                <span>5
+5°básico Lenguaje y Comunicación </span>
                 <span class="correo-fecha">23/07/2026</span>
             </div>
             <div class="correo-asunto">Evaluación de "Harry Potter"</div>
@@ -249,9 +263,11 @@ Les…"</div>
   
         <div class="mes">
           <h2>Julio 2026</h2>
+          <input type="checkbox" class="toggle-pasadas" id="tp-2026-07">
+          <label class="btn-pasadas" for="tp-2026-07"><span class="txt-mostrar">▸ Mostrar lo anterior a esta semana</span><span class="txt-ocultar">▾ Ocultar lo anterior a esta semana</span></label>
           <table class="calendario">
             <tr><th>Lunes</th><th>Martes</th><th>Miércoles</th><th>Jueves</th><th>Viernes</th></tr>
-            <tr><td class="dia vacio-dia"></td><td class="dia vacio-dia"></td><td class="dia">
+            <tr class="fila-semana semana-pasada"><td class="dia vacio-dia"></td><td class="dia vacio-dia"></td><td class="dia">
                     <div class="num-dia">1</div>
                     <div class="mitad marco"></div>
                     <div class="mitad agatha"></div>
@@ -263,13 +279,13 @@ Les…"</div>
                     <div class="num-dia">3</div>
                     <div class="mitad marco"></div>
                     <div class="mitad agatha"></div>
-                </td></tr><tr><td class="dia">
+                </td></tr><tr class="fila-semana semana-pasada"><td class="dia">
                     <div class="num-dia">6</div>
                     <div class="mitad marco"></div>
                     <div class="mitad agatha"></div>
                 </td><td class="dia">
                     <div class="num-dia">7</div>
-                    <div class="mitad marco"><ul><li>Análisis de la obra y práctica instrumental de la Frase A</li></ul></div>
+                    <div class="mitad marco"><ul><li>Análisis de la obra y práctica instrumental de la Frase A</li><li>Traer plumones de colores para comenzar UNIDAD N°3</li></ul></div>
                     <div class="mitad agatha"></div>
                 </td><td class="dia">
                     <div class="num-dia">8</div>
@@ -283,7 +299,7 @@ Les…"</div>
                     <div class="num-dia">10</div>
                     <div class="mitad marco"></div>
                     <div class="mitad agatha"></div>
-                </td></tr><tr><td class="dia">
+                </td></tr><tr class="fila-semana semana-pasada"><td class="dia">
                     <div class="num-dia">13</div>
                     <div class="mitad marco"><ul><li>Traer materiales: Bitácora (carpeta de arte), plumones, lápiz grafito, goma, tijeras</li></ul></div>
                     <div class="mitad agatha"><ul><li>Traer materiales para la próxima clase: lápiz grafito, goma, plumones de colores</li></ul></div>
@@ -303,9 +319,9 @@ Les…"</div>
                     <div class="num-dia">17</div>
                     <div class="mitad marco"></div>
                     <div class="mitad agatha"></div>
-                </td></tr><tr><td class="dia hoy">
+                </td></tr><tr class="fila-semana"><td class="dia hoy">
                     <div class="num-dia">20</div>
-                    <div class="mitad marco"><ul><li>Traer lectura personal para los 10 minutos de lectura</li><li>Traer Trabajo de Lenguaje (terminado)</li><li>Traer 1 hoja de block de 1/8 por pareja</li><li>Traer plumones de colores</li><li>Traer lápiz grafito y goma</li></ul></div>
+                    <div class="mitad marco"><ul><li>Traer lectura personal para los 10 minutos de lectura</li><li>Trabajo en boceto de planeta para proyecto 'Un nuevo planeta para El Principito' (parejas)</li><li>Trabajo en volumen (maqueta) para proyecto 'Un nuevo planeta para El Principito'</li><li>Traer Trabajo de Lenguaje (terminado)</li><li>Traer 1 hoja de block de 1/8 por pareja</li><li>Traer plumones de colores</li><li>Traer lápiz grafito y goma</li></ul></div>
                     <div class="mitad agatha"><ul><li>Modelo de corazón en parejas con materiales específicos: cartón piedra, plasticinas (rojo, azul, blanco, amarillo), lápiz grafito, goma, regla, pegamento, plumón permanente negro, cartulinas de colores para etiquetas, alfileres (opcional)</li></ul></div>
                 </td><td class="dia">
                     <div class="num-dia">21</div>
@@ -323,7 +339,7 @@ Les…"</div>
                     <div class="num-dia">24</div>
                     <div class="mitad marco"></div>
                     <div class="mitad agatha"></div>
-                </td></tr><tr><td class="dia">
+                </td></tr><tr class="fila-semana"><td class="dia">
                     <div class="num-dia">27</div>
                     <div class="mitad marco"><ul><li>Traer materiales obligatorios para proyecto 'Un nuevo planeta para El Principito': Boceto LISTO, 1 base de cartón (block tamaño 1/8), media pelota de plumavit, temperas, pinceles, vaso, delantal, paño, plasticina, silicona caliente, molda dientes</li><li>Proyecto 'Un nuevo planeta para El Principito' - trabajo en parejas con materiales traídos</li></ul></div>
                     <div class="mitad agatha"></div>
@@ -346,21 +362,21 @@ Les…"</div>
                 </td></tr>
           </table>
           <div class="agenda-mensual">
-            <div class="agenda-dia">
+            <div class="agenda-dia agenda-pasada">
                         <div class="agenda-fecha">Mar 07/07</div>
                         <div class="agenda-seccion marco">
                         <h4>👦 Marco Antonio</h4>
-                        <ul><li>Análisis de la obra y práctica instrumental de la Frase A</li></ul>
+                        <ul><li>Análisis de la obra y práctica instrumental de la Frase A</li><li>Traer plumones de colores para comenzar UNIDAD N°3</li></ul>
                     </div>
                         
-                    </div><div class="agenda-dia">
+                    </div><div class="agenda-dia agenda-pasada">
                         <div class="agenda-fecha">Mié 08/07</div>
                         
                         <div class="agenda-seccion agatha">
                         <h4>👧 Ágatha Sofía</h4>
                         <ul><li>Repaso de la partitura y la ubicación de notas en el pentagrama</li></ul>
                     </div>
-                    </div><div class="agenda-dia">
+                    </div><div class="agenda-dia agenda-pasada">
                         <div class="agenda-fecha">Lun 13/07</div>
                         <div class="agenda-seccion marco">
                         <h4>👦 Marco Antonio</h4>
@@ -370,14 +386,14 @@ Les…"</div>
                         <h4>👧 Ágatha Sofía</h4>
                         <ul><li>Traer materiales para la próxima clase: lápiz grafito, goma, plumones de colores</li></ul>
                     </div>
-                    </div><div class="agenda-dia">
+                    </div><div class="agenda-dia agenda-pasada">
                         <div class="agenda-fecha">Mar 14/07</div>
                         <div class="agenda-seccion marco">
                         <h4>👦 Marco Antonio</h4>
                         <ul><li>Análisis de la rúbrica y práctica instrumental de la Frase A</li></ul>
                     </div>
                         
-                    </div><div class="agenda-dia">
+                    </div><div class="agenda-dia agenda-pasada">
                         <div class="agenda-fecha">Jue 16/07</div>
                         <div class="agenda-seccion marco">
                         <h4>👦 Marco Antonio</h4>
@@ -388,7 +404,7 @@ Les…"</div>
                         <div class="agenda-fecha hoy">Lun 20/07</div>
                         <div class="agenda-seccion marco">
                         <h4>👦 Marco Antonio</h4>
-                        <ul><li>Traer lectura personal para los 10 minutos de lectura</li><li>Traer Trabajo de Lenguaje (terminado)</li><li>Traer 1 hoja de block de 1/8 por pareja</li><li>Traer plumones de colores</li><li>Traer lápiz grafito y goma</li></ul>
+                        <ul><li>Traer lectura personal para los 10 minutos de lectura</li><li>Trabajo en boceto de planeta para proyecto 'Un nuevo planeta para El Principito' (parejas)</li><li>Trabajo en volumen (maqueta) para proyecto 'Un nuevo planeta para El Principito'</li><li>Traer Trabajo de Lenguaje (terminado)</li><li>Traer 1 hoja de block de 1/8 por pareja</li><li>Traer plumones de colores</li><li>Traer lápiz grafito y goma</li></ul>
                     </div>
                         <div class="agenda-seccion agatha">
                         <h4>👧 Ágatha Sofía</h4>
@@ -441,9 +457,10 @@ Les…"</div>
         </div>
         <div class="mes">
           <h2>Agosto 2026</h2>
+          
           <table class="calendario">
             <tr><th>Lunes</th><th>Martes</th><th>Miércoles</th><th>Jueves</th><th>Viernes</th></tr>
-            <tr><td class="dia">
+            <tr class="fila-semana"><td class="dia">
                     <div class="num-dia">3</div>
                     <div class="mitad marco"></div>
                     <div class="mitad agatha"></div>
@@ -463,7 +480,7 @@ Les…"</div>
                     <div class="num-dia">7</div>
                     <div class="mitad marco"></div>
                     <div class="mitad agatha"></div>
-                </td></tr><tr><td class="dia">
+                </td></tr><tr class="fila-semana"><td class="dia">
                     <div class="num-dia">10</div>
                     <div class="mitad marco"></div>
                     <div class="mitad agatha"></div>
@@ -483,7 +500,7 @@ Les…"</div>
                     <div class="num-dia">14</div>
                     <div class="mitad marco"></div>
                     <div class="mitad agatha"></div>
-                </td></tr><tr><td class="dia">
+                </td></tr><tr class="fila-semana"><td class="dia">
                     <div class="num-dia">17</div>
                     <div class="mitad marco"></div>
                     <div class="mitad agatha"></div>
@@ -503,7 +520,7 @@ Les…"</div>
                     <div class="num-dia">21</div>
                     <div class="mitad marco"></div>
                     <div class="mitad agatha"></div>
-                </td></tr><tr><td class="dia">
+                </td></tr><tr class="fila-semana"><td class="dia">
                     <div class="num-dia">24</div>
                     <div class="mitad marco"></div>
                     <div class="mitad agatha"></div>
@@ -523,7 +540,7 @@ Les…"</div>
                     <div class="num-dia">28</div>
                     <div class="mitad marco"></div>
                     <div class="mitad agatha"></div>
-                </td></tr><tr><td class="dia">
+                </td></tr><tr class="fila-semana"><td class="dia">
                     <div class="num-dia">31</div>
                     <div class="mitad marco"></div>
                     <div class="mitad agatha"></div>
