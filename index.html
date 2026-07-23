@@ -17,15 +17,6 @@
   .vacio { color:#888; font-style:italic; }
   .mes { background:white; border-radius:10px; padding:16px; margin-bottom:24px; box-shadow:0 1px 3px rgba(0,0,0,0.08); overflow-x:auto; }
   .mes h2 { color:#1F4E79; margin-top:0; }
-  /* Botón para expandir/ocultar las semanas y días ya transcurridos del mes en curso */
-  .toggle-pasadas { display:none; }
-  .btn-pasadas { display:inline-block; cursor:pointer; font-size:13px; font-weight:600;
-                  color:#2E75B6; margin:0 0 10px; user-select:none; }
-  .btn-pasadas .txt-ocultar { display:none; }
-  .toggle-pasadas:checked ~ .btn-pasadas .txt-mostrar { display:none; }
-  .toggle-pasadas:checked ~ .btn-pasadas .txt-ocultar { display:inline; }
-  .toggle-pasadas:not(:checked) ~ table .semana-pasada { display:none; }
-  .toggle-pasadas:not(:checked) ~ .agenda-mensual .agenda-pasada { display:none; }
   table.calendario { width:100%; border-collapse:collapse; table-layout:fixed; }
   table.calendario th { background:#2E75B6; color:white; padding:8px; font-size:13px; }
   td.dia { vertical-align:top; border:1px solid #ddd; padding:0; height:90px; width:20%; }
@@ -54,6 +45,8 @@
   .correo-asunto { font-weight:600; font-size:14px; margin-bottom:2px; }
   .correo-de { font-size:12px; color:#888; margin-bottom:4px; }
   .correo-snippet { font-size:13px; color:#444; }
+  .nota-repetida { font-size:11px; color:#8a6d3b; background:#fcf8e3; border-radius:4px; padding:4px 8px; margin-top:6px; }
+  .marca-repetida { cursor:help; }
   .estado-resumen { padding:12px 20px; }
   .estado-item { padding:6px 0; font-size:13px; }
   .estado-titulo { color:#333; }
@@ -89,76 +82,26 @@
 
   <div class="header">
     <h1>📋 Informe Colegio San Francisco Javier de Huechuraba</h1>
-    <p>Actualizado: 23/07/2026 18:18</p>
+    <p>Actualizado: 23/07/2026 18:25</p>
   </div>
 
   <div class="resumen estado-resumen">
     <div class="estado-item">
-                <div class="estado-titulo">👦 Información de Marco Antonio actualizada el 23/07/2026 a las 18:16.</div><div class="estado-fallo">⚠️ Último intento fallido: el 15/07/2026 a las 17:30.</div></div>
+                <div class="estado-titulo">👦 Información de Marco Antonio actualizada el 23/07/2026 a las 18:23.</div><div class="estado-fallo">⚠️ Último intento fallido: el 15/07/2026 a las 17:30.</div></div>
 <div class="estado-item">
-                <div class="estado-titulo">👧 Información de Ágatha Sofía actualizada el 23/07/2026 a las 18:18.</div><div class="estado-fallo">⚠️ Último intento fallido: el 17/07/2026 a las 18:44.</div></div>
+                <div class="estado-titulo">👧 Información de Ágatha Sofía actualizada el 23/07/2026 a las 18:25.</div><div class="estado-fallo">⚠️ Último intento fallido: el 17/07/2026 a las 18:44.</div></div>
   </div>
 
   <div class="resumen">
     <h3>📅 Actividades de mañana — 24/07/2026</h3>
-    <table class="tabla-resumen">
-        <tr><th>Alumno</th><th>Materia</th><th>Actividad</th><th>Fecha</th></tr>
-        <tr><td>👦 Marco Antonio</td><td>6° Lenguaje y Comunicación
-2</td><td>Trabajo en el Cuadernillo de la Unidad 2, páginas 3 a 18, sobre elementos del mundo narrado, narrador y personajes <span style="color:#b45309;font-style:italic;font-size:0.85em">(≈ fecha estimada, no se indicó el día)</span></td><td>24/07/2026</td></tr>
-<tr><td>👦 Marco Antonio</td><td>6° Lenguaje y Comunicación
-2</td><td>Traer lectura personal para los 10 minutos de lectura <span style="color:#b45309;font-style:italic;font-size:0.85em">(≈ fecha estimada, no se indicó el día)</span></td><td>24/07/2026</td></tr>
-<tr><td>👦 Marco Antonio</td><td>6° Lenguaje y Comunicación
-2</td><td>Desarrollar la Guía de Portafolio <span style="color:#b45309;font-style:italic;font-size:0.85em">(≈ fecha estimada, no se indicó el día)</span></td><td>24/07/2026</td></tr>
-        </table>
+    <p class='vacio'>Sin actividades.</p>
     <h3>📆 Próxima semana (24/07 al 30/07/2026)</h3>
     <details class="correos-desplegable correos-marco">
-            <summary>👦 Marco Antonio (3)</summary>
-            <div class="lista-correos"><div class="correo-item">
-            <div class="correo-cabecera">
-                <span>ARTES VISUALES 2026
-6° BÁSICOS</span>
-                <span class="correo-fecha">27/07/2026</span>
-            </div>
-            <div class="correo-asunto">Traer materiales obligatorios para proyecto 'Un nuevo planeta para El Principito': Boceto LISTO, 1 base de cartón (block tamaño 1/8), media pelota de plumavit, temperas, pinceles, vaso, delantal, paño, plasticina, silicona caliente, molda dientes. Materiales opcionales según diseño: plumones acrílicos, cartulinas de colores, goma eva, foami, material de desecho/reciclaje, géneros, lana, poleras viejas.</div>
-        </div>
-<div class="correo-item">
-            <div class="correo-cabecera">
-                <span>Música 2026
-Sextos Básicos</span>
-                <span class="correo-fecha">28/07/2026</span>
-            </div>
-            <div class="correo-asunto">Práctica instrumental del tema completo</div>
-        </div>
-<div class="correo-item">
-            <div class="correo-cabecera">
-                <span>Ciencias Naturales 6° Básico 2026</span>
-                <span class="correo-fecha">29/07/2026</span>
-            </div>
-            <div class="correo-asunto">Crear Lapbook de energía y sus transformaciones. Traer: hoja de Block grande y/o cartulina española de color preferencia, pegamento, tijeras, imágenes o dibujos de objetos con energías vistas en clase, marcadores y/o lápices de colores.</div>
-        </div></div>
+            <summary>👦 Marco Antonio (0)</summary>
+            <div class="lista-correos"><p class='vacio'>Sin actividades.</p></div>
         </details><details class="correos-desplegable correos-agatha">
-            <summary>👧 Ágatha Sofía (3)</summary>
-            <div class="lista-correos"><div class="correo-item">
-            <div class="correo-cabecera">
-                <span>Ciencias Naturales 5° Básico 2026</span>
-                <span class="correo-fecha">27/07/2026</span>
-            </div>
-            <div class="correo-asunto">Modelo de corazón <span style="color:#b45309;font-style:italic;font-size:0.85em">(≈ fecha estimada, no se indicó el día)</span></div>
-        </div>
-<div class="correo-item">
-            <div class="correo-cabecera">
-                <span>Ciencias Naturales 5° Básico 2026</span>
-                <span class="correo-fecha">28/07/2026</span>
-            </div>
-            <div class="correo-asunto">Modelo de corazón <span style="color:#b45309;font-style:italic;font-size:0.85em">(≈ fecha estimada, no se indicó el día)</span></div>
-        </div>
-<div class="correo-item">
-            <div class="correo-cabecera">
-                <span>5°básico Lenguaje y Comunicación 20</span>
-                <span class="correo-fecha">30/07/2026</span>
-            </div>
-            <div class="correo-asunto">Evaluación de Unidad 2: noticia y artículo informativo (10%)</div>
-        </div></div>
+            <summary>👧 Ágatha Sofía (0)</summary>
+            <div class="lista-correos"><p class='vacio'>Sin actividades.</p></div>
         </details>
   </div>
 
@@ -344,11 +287,9 @@ Les…"</div>
   
         <div class="mes">
           <h2>Julio 2026</h2>
-          <input type="checkbox" class="toggle-pasadas" id="tp-2026-07">
-          <label class="btn-pasadas" for="tp-2026-07"><span class="txt-mostrar">▸ Mostrar lo anterior a esta semana</span><span class="txt-ocultar">▾ Ocultar lo anterior a esta semana</span></label>
           <table class="calendario">
             <tr><th>Lunes</th><th>Martes</th><th>Miércoles</th><th>Jueves</th><th>Viernes</th></tr>
-            <tr class="fila-semana semana-pasada"><td class="dia vacio-dia"></td><td class="dia vacio-dia"></td><td class="dia">
+            <tr><td class="dia vacio-dia"></td><td class="dia vacio-dia"></td><td class="dia">
                     <div class="num-dia">1</div>
                     <div class="mitad marco"></div>
                     <div class="mitad agatha"></div>
@@ -360,13 +301,13 @@ Les…"</div>
                     <div class="num-dia">3</div>
                     <div class="mitad marco"></div>
                     <div class="mitad agatha"></div>
-                </td></tr><tr class="fila-semana semana-pasada"><td class="dia">
+                </td></tr><tr><td class="dia">
                     <div class="num-dia">6</div>
                     <div class="mitad marco"></div>
                     <div class="mitad agatha"></div>
                 </td><td class="dia">
                     <div class="num-dia">7</div>
-                    <div class="mitad marco"><ul><li>Análisis de la obra y práctica instrumental de la Frase A</li><li>Traer plumones de colores para comenzar UNIDAD N°3</li></ul></div>
+                    <div class="mitad marco"></div>
                     <div class="mitad agatha"></div>
                 </td><td class="dia">
                     <div class="num-dia">8</div>
@@ -380,13 +321,13 @@ Les…"</div>
                     <div class="num-dia">10</div>
                     <div class="mitad marco"></div>
                     <div class="mitad agatha"></div>
-                </td></tr><tr class="fila-semana semana-pasada"><td class="dia">
+                </td></tr><tr><td class="dia">
                     <div class="num-dia">13</div>
-                    <div class="mitad marco"><ul><li>Traer materiales: Bitácora (carpeta de arte), plumones, lápiz grafito, goma, tijeras</li></ul></div>
-                    <div class="mitad agatha"><ul><li>Traer materiales para la próxima clase: lápiz grafito, goma, plumones de colores</li></ul></div>
+                    <div class="mitad marco"></div>
+                    <div class="mitad agatha"></div>
                 </td><td class="dia">
                     <div class="num-dia">14</div>
-                    <div class="mitad marco"><ul><li>Análisis de la rúbrica y práctica instrumental de la Frase A</li></ul></div>
+                    <div class="mitad marco"></div>
                     <div class="mitad agatha"></div>
                 </td><td class="dia">
                     <div class="num-dia">15</div>
@@ -394,308 +335,56 @@ Les…"</div>
                     <div class="mitad agatha"></div>
                 </td><td class="dia">
                     <div class="num-dia">16</div>
-                    <div class="mitad marco"><ul><li>Traer una lectura para los primeros 10 minutos de clase (lectura personal o cualquier libro)</li><li>Traer Texto del Estudiante, Tomo II de Valiente a todas las clases de Matemática</li></ul></div>
+                    <div class="mitad marco"></div>
                     <div class="mitad agatha"></div>
                 </td><td class="dia">
                     <div class="num-dia">17</div>
                     <div class="mitad marco"></div>
                     <div class="mitad agatha"></div>
-                </td></tr><tr class="fila-semana"><td class="dia">
+                </td></tr><tr><td class="dia">
                     <div class="num-dia">20</div>
-                    <div class="mitad marco"><ul><li>Trabajo en boceto de planeta para proyecto 'Un nuevo planeta para El Principito' (parejas)</li><li>Trabajo en volumen (maqueta) para proyecto 'Un nuevo planeta para El Principito'</li><li>Traer Trabajo de Lenguaje (terminado)</li><li>Traer 1 hoja de block de 1/8 por pareja</li><li>Traer plumones de colores</li><li>Traer lápiz grafito y goma</li></ul></div>
-                    <div class="mitad agatha"><ul><li>Evaluación de Harry Potter <span style="color:#b45309;font-style:italic;font-size:0.85em">(≈ fecha estimada, no se indicó el día)</span></li></ul></div>
+                    <div class="mitad marco"></div>
+                    <div class="mitad agatha"></div>
                 </td><td class="dia">
                     <div class="num-dia">21</div>
-                    <div class="mitad marco"><ul><li>Práctica instrumental de la Frase B</li></ul></div>
-                    <div class="mitad agatha"><ul><li>Evaluación de Harry Potter <span style="color:#b45309;font-style:italic;font-size:0.85em">(≈ fecha estimada, no se indicó el día)</span></li></ul></div>
+                    <div class="mitad marco"></div>
+                    <div class="mitad agatha"></div>
                 </td><td class="dia">
                     <div class="num-dia">22</div>
-                    <div class="mitad marco"><ul><li>Trabajo en el Cuadernillo de la Unidad 2, páginas 3 a 18, sobre elementos del mundo narrado, narrador y personajes <span style="color:#b45309;font-style:italic;font-size:0.85em">(≈ fecha estimada, no se indicó el día)</span></li><li>Traer lectura personal para los 10 minutos de lectura <span style="color:#b45309;font-style:italic;font-size:0.85em">(≈ fecha estimada, no se indicó el día)</span></li><li>Desarrollar la Guía de Portafolio <span style="color:#b45309;font-style:italic;font-size:0.85em">(≈ fecha estimada, no se indicó el día)</span></li></ul></div>
-                    <div class="mitad agatha"><ul><li>Evaluación de Harry Potter <span style="color:#b45309;font-style:italic;font-size:0.85em">(≈ fecha estimada, no se indicó el día)</span></li></ul></div>
+                    <div class="mitad marco"></div>
+                    <div class="mitad agatha"></div>
                 </td><td class="dia hoy">
                     <div class="num-dia">23</div>
-                    <div class="mitad marco"><ul><li>Trabajo en el Cuadernillo de la Unidad 2, páginas 3 a 18, sobre elementos del mundo narrado, narrador y personajes <span style="color:#b45309;font-style:italic;font-size:0.85em">(≈ fecha estimada, no se indicó el día)</span></li><li>Traer lectura personal para los 10 minutos de lectura <span style="color:#b45309;font-style:italic;font-size:0.85em">(≈ fecha estimada, no se indicó el día)</span></li><li>Desarrollar la Guía de Portafolio <span style="color:#b45309;font-style:italic;font-size:0.85em">(≈ fecha estimada, no se indicó el día)</span></li></ul></div>
-                    <div class="mitad agatha"><ul><li>Evaluación de "Harry Potter"</li><li>Evaluación de Harry Potter <span style="color:#b45309;font-style:italic;font-size:0.85em">(≈ fecha estimada, no se indicó el día)</span></li></ul></div>
+                    <div class="mitad marco"></div>
+                    <div class="mitad agatha"></div>
                 </td><td class="dia">
                     <div class="num-dia">24</div>
-                    <div class="mitad marco"><ul><li>Trabajo en el Cuadernillo de la Unidad 2, páginas 3 a 18, sobre elementos del mundo narrado, narrador y personajes <span style="color:#b45309;font-style:italic;font-size:0.85em">(≈ fecha estimada, no se indicó el día)</span></li><li>Traer lectura personal para los 10 minutos de lectura <span style="color:#b45309;font-style:italic;font-size:0.85em">(≈ fecha estimada, no se indicó el día)</span></li><li>Desarrollar la Guía de Portafolio <span style="color:#b45309;font-style:italic;font-size:0.85em">(≈ fecha estimada, no se indicó el día)</span></li></ul></div>
+                    <div class="mitad marco"></div>
                     <div class="mitad agatha"></div>
-                </td></tr><tr class="fila-semana"><td class="dia">
+                </td></tr><tr><td class="dia">
                     <div class="num-dia">27</div>
-                    <div class="mitad marco"><ul><li>Traer materiales obligatorios para proyecto 'Un nuevo planeta para El Principito': Boceto LISTO, 1 base de cartón (block tamaño 1/8), media pelota de plumavit, temperas, pinceles, vaso, delantal, paño, plasticina, silicona caliente, molda dientes. Materiales opcionales según diseño: plumones acrílicos, cartulinas de colores, goma eva, foami, material de desecho/reciclaje, géneros, lana, poleras viejas.</li></ul></div>
-                    <div class="mitad agatha"><ul><li>Modelo de corazón <span style="color:#b45309;font-style:italic;font-size:0.85em">(≈ fecha estimada, no se indicó el día)</span></li></ul></div>
+                    <div class="mitad marco"></div>
+                    <div class="mitad agatha"></div>
                 </td><td class="dia">
                     <div class="num-dia">28</div>
-                    <div class="mitad marco"><ul><li>Práctica instrumental del tema completo</li></ul></div>
-                    <div class="mitad agatha"><ul><li>Modelo de corazón <span style="color:#b45309;font-style:italic;font-size:0.85em">(≈ fecha estimada, no se indicó el día)</span></li></ul></div>
+                    <div class="mitad marco"></div>
+                    <div class="mitad agatha"></div>
                 </td><td class="dia">
                     <div class="num-dia">29</div>
-                    <div class="mitad marco"><ul><li>Crear Lapbook de energía y sus transformaciones. Traer: hoja de Block grande y/o cartulina española de color preferencia, pegamento, tijeras, imágenes o dibujos de objetos con energías vistas en clase, marcadores y/o lápices de colores.</li></ul></div>
+                    <div class="mitad marco"></div>
                     <div class="mitad agatha"></div>
                 </td><td class="dia">
                     <div class="num-dia">30</div>
                     <div class="mitad marco"></div>
-                    <div class="mitad agatha"><ul><li>Evaluación de Unidad 2: noticia y artículo informativo (10%)</li></ul></div>
+                    <div class="mitad agatha"></div>
                 </td><td class="dia">
                     <div class="num-dia">31</div>
                     <div class="mitad marco"></div>
-                    <div class="mitad agatha"><ul><li>Modelo de corazón <span style="color:#b45309;font-style:italic;font-size:0.85em">(≈ fecha estimada, no se indicó el día)</span></li></ul></div>
+                    <div class="mitad agatha"></div>
                 </td></tr>
           </table>
           <div class="agenda-mensual">
-            <div class="agenda-dia agenda-pasada">
-                        <div class="agenda-fecha">Mar 07/07</div>
-                        <div class="agenda-seccion marco">
-                        <h4>👦 Marco Antonio</h4>
-                        <ul><li>Análisis de la obra y práctica instrumental de la Frase A</li><li>Traer plumones de colores para comenzar UNIDAD N°3</li></ul>
-                    </div>
-                        
-                    </div><div class="agenda-dia agenda-pasada">
-                        <div class="agenda-fecha">Lun 13/07</div>
-                        <div class="agenda-seccion marco">
-                        <h4>👦 Marco Antonio</h4>
-                        <ul><li>Traer materiales: Bitácora (carpeta de arte), plumones, lápiz grafito, goma, tijeras</li></ul>
-                    </div>
-                        <div class="agenda-seccion agatha">
-                        <h4>👧 Ágatha Sofía</h4>
-                        <ul><li>Traer materiales para la próxima clase: lápiz grafito, goma, plumones de colores</li></ul>
-                    </div>
-                    </div><div class="agenda-dia agenda-pasada">
-                        <div class="agenda-fecha">Mar 14/07</div>
-                        <div class="agenda-seccion marco">
-                        <h4>👦 Marco Antonio</h4>
-                        <ul><li>Análisis de la rúbrica y práctica instrumental de la Frase A</li></ul>
-                    </div>
-                        
-                    </div><div class="agenda-dia agenda-pasada">
-                        <div class="agenda-fecha">Jue 16/07</div>
-                        <div class="agenda-seccion marco">
-                        <h4>👦 Marco Antonio</h4>
-                        <ul><li>Traer una lectura para los primeros 10 minutos de clase (lectura personal o cualquier libro)</li><li>Traer Texto del Estudiante, Tomo II de Valiente a todas las clases de Matemática</li></ul>
-                    </div>
-                        
-                    </div><div class="agenda-dia agenda-pasada">
-                        <div class="agenda-fecha">Lun 20/07</div>
-                        <div class="agenda-seccion marco">
-                        <h4>👦 Marco Antonio</h4>
-                        <ul><li>Trabajo en boceto de planeta para proyecto 'Un nuevo planeta para El Principito' (parejas)</li><li>Trabajo en volumen (maqueta) para proyecto 'Un nuevo planeta para El Principito'</li><li>Traer Trabajo de Lenguaje (terminado)</li><li>Traer 1 hoja de block de 1/8 por pareja</li><li>Traer plumones de colores</li><li>Traer lápiz grafito y goma</li></ul>
-                    </div>
-                        <div class="agenda-seccion agatha">
-                        <h4>👧 Ágatha Sofía</h4>
-                        <ul><li>Evaluación de Harry Potter <span style="color:#b45309;font-style:italic;font-size:0.85em">(≈ fecha estimada, no se indicó el día)</span></li></ul>
-                    </div>
-                    </div><div class="agenda-dia agenda-pasada">
-                        <div class="agenda-fecha">Mar 21/07</div>
-                        <div class="agenda-seccion marco">
-                        <h4>👦 Marco Antonio</h4>
-                        <ul><li>Práctica instrumental de la Frase B</li></ul>
-                    </div>
-                        <div class="agenda-seccion agatha">
-                        <h4>👧 Ágatha Sofía</h4>
-                        <ul><li>Evaluación de Harry Potter <span style="color:#b45309;font-style:italic;font-size:0.85em">(≈ fecha estimada, no se indicó el día)</span></li></ul>
-                    </div>
-                    </div><div class="agenda-dia agenda-pasada">
-                        <div class="agenda-fecha">Mié 22/07</div>
-                        <div class="agenda-seccion marco">
-                        <h4>👦 Marco Antonio</h4>
-                        <ul><li>Trabajo en el Cuadernillo de la Unidad 2, páginas 3 a 18, sobre elementos del mundo narrado, narrador y personajes <span style="color:#b45309;font-style:italic;font-size:0.85em">(≈ fecha estimada, no se indicó el día)</span></li><li>Traer lectura personal para los 10 minutos de lectura <span style="color:#b45309;font-style:italic;font-size:0.85em">(≈ fecha estimada, no se indicó el día)</span></li><li>Desarrollar la Guía de Portafolio <span style="color:#b45309;font-style:italic;font-size:0.85em">(≈ fecha estimada, no se indicó el día)</span></li></ul>
-                    </div>
-                        <div class="agenda-seccion agatha">
-                        <h4>👧 Ágatha Sofía</h4>
-                        <ul><li>Evaluación de Harry Potter <span style="color:#b45309;font-style:italic;font-size:0.85em">(≈ fecha estimada, no se indicó el día)</span></li></ul>
-                    </div>
-                    </div><div class="agenda-dia">
-                        <div class="agenda-fecha hoy">Jue 23/07</div>
-                        <div class="agenda-seccion marco">
-                        <h4>👦 Marco Antonio</h4>
-                        <ul><li>Trabajo en el Cuadernillo de la Unidad 2, páginas 3 a 18, sobre elementos del mundo narrado, narrador y personajes <span style="color:#b45309;font-style:italic;font-size:0.85em">(≈ fecha estimada, no se indicó el día)</span></li><li>Traer lectura personal para los 10 minutos de lectura <span style="color:#b45309;font-style:italic;font-size:0.85em">(≈ fecha estimada, no se indicó el día)</span></li><li>Desarrollar la Guía de Portafolio <span style="color:#b45309;font-style:italic;font-size:0.85em">(≈ fecha estimada, no se indicó el día)</span></li></ul>
-                    </div>
-                        <div class="agenda-seccion agatha">
-                        <h4>👧 Ágatha Sofía</h4>
-                        <ul><li>Evaluación de "Harry Potter"</li><li>Evaluación de Harry Potter <span style="color:#b45309;font-style:italic;font-size:0.85em">(≈ fecha estimada, no se indicó el día)</span></li></ul>
-                    </div>
-                    </div><div class="agenda-dia">
-                        <div class="agenda-fecha">Vie 24/07</div>
-                        <div class="agenda-seccion marco">
-                        <h4>👦 Marco Antonio</h4>
-                        <ul><li>Trabajo en el Cuadernillo de la Unidad 2, páginas 3 a 18, sobre elementos del mundo narrado, narrador y personajes <span style="color:#b45309;font-style:italic;font-size:0.85em">(≈ fecha estimada, no se indicó el día)</span></li><li>Traer lectura personal para los 10 minutos de lectura <span style="color:#b45309;font-style:italic;font-size:0.85em">(≈ fecha estimada, no se indicó el día)</span></li><li>Desarrollar la Guía de Portafolio <span style="color:#b45309;font-style:italic;font-size:0.85em">(≈ fecha estimada, no se indicó el día)</span></li></ul>
-                    </div>
-                        
-                    </div><div class="agenda-dia">
-                        <div class="agenda-fecha">Lun 27/07</div>
-                        <div class="agenda-seccion marco">
-                        <h4>👦 Marco Antonio</h4>
-                        <ul><li>Traer materiales obligatorios para proyecto 'Un nuevo planeta para El Principito': Boceto LISTO, 1 base de cartón (block tamaño 1/8), media pelota de plumavit, temperas, pinceles, vaso, delantal, paño, plasticina, silicona caliente, molda dientes. Materiales opcionales según diseño: plumones acrílicos, cartulinas de colores, goma eva, foami, material de desecho/reciclaje, géneros, lana, poleras viejas.</li></ul>
-                    </div>
-                        <div class="agenda-seccion agatha">
-                        <h4>👧 Ágatha Sofía</h4>
-                        <ul><li>Modelo de corazón <span style="color:#b45309;font-style:italic;font-size:0.85em">(≈ fecha estimada, no se indicó el día)</span></li></ul>
-                    </div>
-                    </div><div class="agenda-dia">
-                        <div class="agenda-fecha">Mar 28/07</div>
-                        <div class="agenda-seccion marco">
-                        <h4>👦 Marco Antonio</h4>
-                        <ul><li>Práctica instrumental del tema completo</li></ul>
-                    </div>
-                        <div class="agenda-seccion agatha">
-                        <h4>👧 Ágatha Sofía</h4>
-                        <ul><li>Modelo de corazón <span style="color:#b45309;font-style:italic;font-size:0.85em">(≈ fecha estimada, no se indicó el día)</span></li></ul>
-                    </div>
-                    </div><div class="agenda-dia">
-                        <div class="agenda-fecha">Mié 29/07</div>
-                        <div class="agenda-seccion marco">
-                        <h4>👦 Marco Antonio</h4>
-                        <ul><li>Crear Lapbook de energía y sus transformaciones. Traer: hoja de Block grande y/o cartulina española de color preferencia, pegamento, tijeras, imágenes o dibujos de objetos con energías vistas en clase, marcadores y/o lápices de colores.</li></ul>
-                    </div>
-                        
-                    </div><div class="agenda-dia">
-                        <div class="agenda-fecha">Jue 30/07</div>
-                        
-                        <div class="agenda-seccion agatha">
-                        <h4>👧 Ágatha Sofía</h4>
-                        <ul><li>Evaluación de Unidad 2: noticia y artículo informativo (10%)</li></ul>
-                    </div>
-                    </div><div class="agenda-dia">
-                        <div class="agenda-fecha">Vie 31/07</div>
-                        
-                        <div class="agenda-seccion agatha">
-                        <h4>👧 Ágatha Sofía</h4>
-                        <ul><li>Modelo de corazón <span style="color:#b45309;font-style:italic;font-size:0.85em">(≈ fecha estimada, no se indicó el día)</span></li></ul>
-                    </div>
-                    </div>
-          </div>
-        </div>
-        <div class="mes">
-          <h2>Agosto 2026</h2>
-          
-          <table class="calendario">
-            <tr><th>Lunes</th><th>Martes</th><th>Miércoles</th><th>Jueves</th><th>Viernes</th></tr>
-            <tr class="fila-semana"><td class="dia">
-                    <div class="num-dia">3</div>
-                    <div class="mitad marco"><ul><li>Prueba de la Unidad 5: Razones y Porcentajes</li></ul></div>
-                    <div class="mitad agatha"></div>
-                </td><td class="dia">
-                    <div class="num-dia">4</div>
-                    <div class="mitad marco"><ul><li>Práctica instrumental del tema completo</li></ul></div>
-                    <div class="mitad agatha"><ul><li>Evaluación de redacción de mail</li></ul></div>
-                </td><td class="dia">
-                    <div class="num-dia">5</div>
-                    <div class="mitad marco"></div>
-                    <div class="mitad agatha"></div>
-                </td><td class="dia">
-                    <div class="num-dia">6</div>
-                    <div class="mitad marco"></div>
-                    <div class="mitad agatha"></div>
-                </td><td class="dia">
-                    <div class="num-dia">7</div>
-                    <div class="mitad marco"></div>
-                    <div class="mitad agatha"></div>
-                </td></tr><tr class="fila-semana"><td class="dia">
-                    <div class="num-dia">10</div>
-                    <div class="mitad marco"></div>
-                    <div class="mitad agatha"></div>
-                </td><td class="dia">
-                    <div class="num-dia">11</div>
-                    <div class="mitad marco"><ul><li>Evaluación de interpretación del tema completo</li></ul></div>
-                    <div class="mitad agatha"></div>
-                </td><td class="dia">
-                    <div class="num-dia">12</div>
-                    <div class="mitad marco"></div>
-                    <div class="mitad agatha"><ul><li>Evaluaciones individuales - Ejecutar en instrumentos musicales la melodía de 'Sau Sau'</li></ul></div>
-                </td><td class="dia">
-                    <div class="num-dia">13</div>
-                    <div class="mitad marco"></div>
-                    <div class="mitad agatha"></div>
-                </td><td class="dia">
-                    <div class="num-dia">14</div>
-                    <div class="mitad marco"></div>
-                    <div class="mitad agatha"></div>
-                </td></tr><tr class="fila-semana"><td class="dia">
-                    <div class="num-dia">17</div>
-                    <div class="mitad marco"></div>
-                    <div class="mitad agatha"></div>
-                </td><td class="dia">
-                    <div class="num-dia">18</div>
-                    <div class="mitad marco"><ul><li>Ensayo de presentación Gala Folklórica</li></ul></div>
-                    <div class="mitad agatha"></div>
-                </td><td class="dia">
-                    <div class="num-dia">19</div>
-                    <div class="mitad marco"></div>
-                    <div class="mitad agatha"></div>
-                </td><td class="dia">
-                    <div class="num-dia">20</div>
-                    <div class="mitad marco"></div>
-                    <div class="mitad agatha"></div>
-                </td><td class="dia">
-                    <div class="num-dia">21</div>
-                    <div class="mitad marco"></div>
-                    <div class="mitad agatha"></div>
-                </td></tr><tr class="fila-semana"><td class="dia">
-                    <div class="num-dia">24</div>
-                    <div class="mitad marco"></div>
-                    <div class="mitad agatha"></div>
-                </td><td class="dia">
-                    <div class="num-dia">25</div>
-                    <div class="mitad marco"></div>
-                    <div class="mitad agatha"></div>
-                </td><td class="dia">
-                    <div class="num-dia">26</div>
-                    <div class="mitad marco"></div>
-                    <div class="mitad agatha"></div>
-                </td><td class="dia">
-                    <div class="num-dia">27</div>
-                    <div class="mitad marco"></div>
-                    <div class="mitad agatha"></div>
-                </td><td class="dia">
-                    <div class="num-dia">28</div>
-                    <div class="mitad marco"></div>
-                    <div class="mitad agatha"></div>
-                </td></tr><tr class="fila-semana"><td class="dia">
-                    <div class="num-dia">31</div>
-                    <div class="mitad marco"></div>
-                    <div class="mitad agatha"></div>
-                </td><td class="dia vacio-dia"></td><td class="dia vacio-dia"></td><td class="dia vacio-dia"></td><td class="dia vacio-dia"></td></tr>
-          </table>
-          <div class="agenda-mensual">
-            <div class="agenda-dia">
-                        <div class="agenda-fecha">Lun 03/08</div>
-                        <div class="agenda-seccion marco">
-                        <h4>👦 Marco Antonio</h4>
-                        <ul><li>Prueba de la Unidad 5: Razones y Porcentajes</li></ul>
-                    </div>
-                        
-                    </div><div class="agenda-dia">
-                        <div class="agenda-fecha">Mar 04/08</div>
-                        <div class="agenda-seccion marco">
-                        <h4>👦 Marco Antonio</h4>
-                        <ul><li>Práctica instrumental del tema completo</li></ul>
-                    </div>
-                        <div class="agenda-seccion agatha">
-                        <h4>👧 Ágatha Sofía</h4>
-                        <ul><li>Evaluación de redacción de mail</li></ul>
-                    </div>
-                    </div><div class="agenda-dia">
-                        <div class="agenda-fecha">Mar 11/08</div>
-                        <div class="agenda-seccion marco">
-                        <h4>👦 Marco Antonio</h4>
-                        <ul><li>Evaluación de interpretación del tema completo</li></ul>
-                    </div>
-                        
-                    </div><div class="agenda-dia">
-                        <div class="agenda-fecha">Mié 12/08</div>
-                        
-                        <div class="agenda-seccion agatha">
-                        <h4>👧 Ágatha Sofía</h4>
-                        <ul><li>Evaluaciones individuales - Ejecutar en instrumentos musicales la melodía de 'Sau Sau'</li></ul>
-                    </div>
-                    </div><div class="agenda-dia">
-                        <div class="agenda-fecha">Mar 18/08</div>
-                        <div class="agenda-seccion marco">
-                        <h4>👦 Marco Antonio</h4>
-                        <ul><li>Ensayo de presentación Gala Folklórica</li></ul>
-                    </div>
-                        
-                    </div>
+            <p class="vacio">Sin actividades este mes.</p>
           </div>
         </div>
 
